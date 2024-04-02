@@ -1,106 +1,91 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <title>Charlie SIRE</title>
-    <meta content ="text/html; charset=UTF-8", http-equiv="content-type">
-
-  <style>
-    body {
-      padding-bottom: 18px;
-      font-family: "Optima", sans-serif;
-      background-color: rgb(212,238,210);
-      font-size: 12pt
-    }
-    td, th {
-    	padding:3px 5px;
-    }
-
-    a{
-    	color: #352F95;
-    }
-    a:hover, a:focus{
-    	color: #352F95;
-    }
-
-.column {
-  float: left;
-  padding: 10px
-}
-
-.left {
-  width: 55%;
-}
-
-.right {
-  width: 50%;
-}
-
-.sept {
-  width:80%
-}
-
-.deux{
-  width:20%
-}
-
-
-  </style>
-  </head>
-
-  <body>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    <style>
+        body {
+            padding-bottom: 18px;
+            font-family: "Optima", sans-serif;
+            background-color: rgb(212,238,210);
+            font-size: 12pt
+        }
+        .container {
+            display: flex;
+        }
+        .column {
+            flex: 1;
+            padding: 10px;
+        }
+        .left {
+            width: 55%;
+        }
+        .right {
+            width: 45%; /* Adjusted width to make room for padding */
+            padding-left: 20px; /* Added padding to align content with left column */
+        }
+        .right img {
+            display: block;
+            margin: 0 auto; /* Centers the image horizontally */
+        }
+        a {
+            color: #352F95;
+        }
+        a:hover, a:focus {
+            color: #352F95;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
     <div class="column left">
       <div class="row">
-      <font face="Optima" size="6px">Charlie SIRE</font> &nbsp;&nbsp;</font>
-      <br><br><br>
-      I am a Postdoctoral researcher at <a href="https://portail.polytechnique.edu/cmap/fr">Inria Paris Saclay</a> and <a href="https://portail.polytechnique.edu/cmap/fr">Ecole Polytechnique (CMAP)</a>, under the supervision of Josselin Garnier. My Ph.D thesis was defended at <a href="https://www.irsn.fr" > IRSN </a> and was supervised by Rodolphe LE RICHE and Didier RULLIERE. Here is my <a href="cv_charlie-3.pdf"> CV</a>.
-    </div>
-    <br>
-      <div class="row" float=left>
-      <h3>Research interests</h3>
-      I study uncertainty quantification in the context of expensive-to-evaluate simulators. Gaussian Process Regression is at the core of my work, addressing various questions: Inversion, Optimization, Quantization, Design of Experiments, Bayesian Calibration.
+        <font face="Optima" size="6px">Charlie SIRE</font> &nbsp;&nbsp;</font>
+        <br><br><br>
+        I am a Postdoctoral researcher at <a href="https://portail.polytechnique.edu/cmap/fr">Inria Paris Saclay</a> and <a href="https://portail.polytechnique.edu/cmap/fr">Ecole Polytechnique (CMAP)</a>, under the supervision of Josselin Garnier. My Ph.D thesis was defended at <a href="https://www.irsn.fr" > IRSN </a> and was supervised by Rodolphe LE RICHE and Didier RULLIERE. Here is my <a href="cv_charlie-3.pdf"> CV</a>.
+      </div>
+      <br>
+        <div class="row" float=left>
+        <h3>Research interests</h3>
+        I study uncertainty quantification in the context of expensive-to-evaluate simulators. Gaussian Process Regression is at the core of my work, addressing various questions: Inversion, Optimization, Quantization, Design of Experiments, Bayesian Calibration.
+        </div>
+        <div class = "row">
+        <h3> Preprints </h3>
+        <ul>
+          <li>FunQuant: a R package to perform quantization in the context of rare events and time-consuming simulations, with Yann Richet, Rodolphe Le Riche, Didier Rullière, Jérémy Rohmer, and Lucie Pheulpin. (<a href="https://hal.science/hal-04189822">HAL</a>) </li>
+          <li>Augmented quantization: a general approach to mixture models, with Didier Rullière, Rodolphe Le Riche, Jérémy Rohmer, Yann Richet, and Lucie Pheulpin. (<a href="https://hal.science/hal-04209768v1">HAL</a>) </li> 
+        </ul>
       </div>
       <div class = "row">
-      <h3> Preprints </h3>
+      <h3> Articles accepted for publication </h3>
       <ul>
-        <li>FunQuant: a R package to perform quantization in the context of rare events and time-consuming simulations, with Yann Richet, Rodolphe Le Riche, Didier Rullière, Jérémy Rohmer, and Lucie Pheulpin. (<a href="https://hal.science/hal-04189822">HAL</a>) </li>
-        <li>Augmented quantization: a general approach to mixture models, with Didier Rullière, Rodolphe Le Riche, Jérémy Rohmer, Yann Richet, and Lucie Pheulpin. (<a href="https://hal.science/hal-04209768v1">HAL</a>) </li> 
+        <li>Quantizing rare random maps: application to flooding visualization, with Rodolphe Le Riche, Didier Rullière, Jérémy Rohmer, Lucie Pheulpin and Yann Richet.  (<a href="https://doi.org/10.1080/10618600.2023.2203764">link</a>)</li>
+        <li>Improved metamodels for predicting high-dimensional outputs by accounting for the dependence structure of the latent variables: application to marine flooding, with Jérémy Rohmer, Sophie Lecacheux, Deborah Iidier and Rodrigo Pedreros.(<a href="https://doi.org/10.1007/s00477-023-02426-z">link</a>)</li>
       </ul>
+  
+      <h3> Teaching </h3>
+      <ul>
+        <li>Lecturer in the Master of Data Science at École des Mines Saint-Etienne. <br> Design of Experiments, Kriging, Global Optimization</li>
+        <li>Lecturer in the Master IMAM at Université Paris-Saclay. <br> Design of Experiments</li>
+      </ul>
+  
     </div>
-    <div class = "row">
-    <h3> Articles accepted for publication </h3>
-    <ul>
-      <li>Quantizing rare random maps: application to flooding visualization, with Rodolphe Le Riche, Didier Rullière, Jérémy Rohmer, Lucie Pheulpin and Yann Richet.  (<a href="https://doi.org/10.1080/10618600.2023.2203764">link</a>)</li>
-      <li>Improved metamodels for predicting high-dimensional outputs by accounting for the dependence structure of the latent variables: application to marine flooding, with Jérémy Rohmer, Sophie Lecacheux, Deborah Iidier and Rodrigo Pedreros.(<a href="https://doi.org/10.1007/s00477-023-02426-z">link</a>)</li>
-    </ul>
-
-    <h3> Teaching </h3>
-    <ul>
-      <li>Lecturer in the Master of Data Science at École des Mines Saint-Etienne. <br> Design of Experiments, Kriging, Global Optimization</li>
-      <li>Lecturer in the Master IMAM at Université Paris-Saclay. <br> Design of Experiments</li>
-    </ul>
-
-  </div>
-
-  <div class="column">
-  <div class="row">
-  <img src="photo.jpg"
-  alt="photo"
-  align="right"
-  height=300>
+    </div>
+    <div class="column right">
+        <div class="row">
+            <img src="photo.jpg" alt="photo" height="300">
+        </div>
+        <ul>
+            <h3>Contact</h3>
+            <li>Centre de Mathématiques Appliquées (UMR 7641)<br>
+                Ecole Polytechnique<br>
+                Route de Saclay<br>
+                91128 PALAISEAU Cedex</li>
+            <li>E-mail : charlie.sire@inria.fr</li>
+        </ul>
+    </div>
 </div>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br>
-<ul>
-    <h3> Contact </h3>
-    Centre de Mathématiques Appliquées (UMR 7641)<br>
-    Ecole Polytechnique<br>
-    Route de Saclay<br>
-    91128  PALAISEAU Cedex<br>
-    E-mail : charlie.sire@inria.fr
-    </ul>
-    </div>
-
-  </body>
-
+</body>
 </html>
