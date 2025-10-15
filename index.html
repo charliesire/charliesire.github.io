@@ -8,7 +8,7 @@
             padding-bottom: 18px;
             font-family: "Optima", sans-serif;
             background-color: rgb(212,238,210);
-            font-size: 11pt; /* 🔹 Diminution de la taille de police globale */
+            font-size: 11pt; /* taille de police réduite */
         }
 
         .container {
@@ -26,19 +26,25 @@
 
         .right {
             width: 45%;
-            padding-left: 60px;  /* 🔹 Décalage du contenu vers la droite */
-            font-size: 10pt;     /* 🔹 Police un peu plus petite pour la colonne de droite */
+            padding-left: 60px;   /* décale vers la droite */
+            font-size: 10pt;      /* police un peu plus petite */
+            display: flex;        /* 🔹 active le mode flexbox */
+            flex-direction: column;
+            align-items: center;  /* 🔹 centre horizontalement */
+            justify-content: center; /* 🔹 centre verticalement */
         }
 
         .right img {
             display: block;
-            margin: 0 auto;
+            margin-bottom: 20px; /* espace entre la photo et le contact */
+            height: 300px;
         }
 
         .right ul {
             list-style-type: none;
             padding-left: 0;
-            margin-top: 20px;
+            margin: 0;
+            text-align: center; /* 🔹 centre le texte */
         }
 
         .right h3 {
@@ -74,7 +80,7 @@
       <div class="row">
         <h3>Publications</h3>
         <ul>
-          <li><b>Bayesian calibration for Prediction in a Multi-Output Transposition Context</b>, with Josselin Garnier, Baptiste Kerleguer, Cédric Durantin, Gilles Defaux, and Guillaume Perrin (2025). (<a href="https://doi.org/10.1615/Int.J.UncertaintyQuantification.2025056586">link</a>)</li>
+          <li><b>Bayesian calibration for Prediction in a Multi-Output Transposition Context</b>, with Josselin Garnier, Baptiste Kerleguer, Cédric Durantin, Gilles Defaux, and Guillaume Perrin (2024). (<a href="https://doi.org/10.1615/Int.J.UncertaintyQuantification.2025056586">link</a>)</li>
           <li><b>Quantizing rare random maps: application to flooding visualization</b>, with Rodolphe Le Riche, Didier Rullière, Jérémy Rohmer, Lucie Pheulpin and Yann Richet. <i>Journal of Computational and Graphical Statistics (2023)</i> (<a href="https://doi.org/10.1080/10618600.2023.2203764">link</a>)</li>
           <li><b>Improved metamodels for predicting high-dimensional outputs by accounting for the dependence structure of the latent variables: application to marine flooding</b>, with Jérémy Rohmer, Sophie Lecacheux, Deborah Iidier and Rodrigo Pedreros. <i>Stochastic Environmental Research and Risk Assessment (2023)</i> (<a href="https://doi.org/10.1007/s00477-023-02426-z">link</a>)</li>
         </ul>
@@ -99,9 +105,7 @@
     </div>
 
     <div class="column right">
-        <div class="row">
-            <img src="photo.jpg" alt="photo" height="300">
-        </div>
+        <img src="photo.jpg" alt="photo">
         <ul>
             <h3>Contact</h3>
             <li>Centre de Géosciences <br>
